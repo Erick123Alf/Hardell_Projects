@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Arquimedes.exe" version="1.0.0.0" publicKeyToken="39191f0e21806e03" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Arquimedes" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="Arquimedes.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Arquimedes.exe" size="313232">
+      <assemblyIdentity name="Arquimedes" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XUgaARHuT2qG+9Fz6QiJyMw3yGagHWVWF4fFYuDc3uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Cryptography.dll" size="4694688">
+      <assemblyIdentity name="BouncyCastle.Cryptography" version="2.0.0.0" publicKeyToken="072EDCF4A5328938" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2aWMhLqlWhJoTNI4G8oDyPKpy64hpr8enr1l9JVilyE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="2631888">
+      <assemblyIdentity name="itextsharp" version="5.5.13.6" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ke+IbgHBwm4Y7vHUSXOff7qnz14xvjE7m+wVU/piRhc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QRCoder.dll" size="197120">
+      <assemblyIdentity name="QRCoder" version="1.8.0.0" publicKeyToken="C4ED5B9AE8358A28" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TsFxehVOA6V3o360zhhFmfiM285FNUbml4cag5go1E4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SqlClient.dll" size="127752">
+      <assemblyIdentity name="System.Data.SqlClient" version="4.6.2.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gumWfaoFxf7CbNoCN2fgmbs9YOFHKNFsTBpwKHQFAnA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Arquimedes.exe.config" size="413">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T6znT0ymY+y9zHwSp5Q7Wb2ohGwdSqf9mSzL1Pf5GQc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ERICK\PC" issuerKeyHash="9a21e9ef4a7b50530c6cf2305efb148f2af010d8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wyfms0+Ibxq5ngrxaEgbvuljshSRNAgZ0caBZraHXDI=</DigestValue></Reference></SignedInfo><SignatureValue>xBCsCVTv/Zmr9ynrozUb8cdyh0i9483doccR4IYDEl90WvHCHGOcEOQim7q9N0sQuCrhywoQ3VV+k4dR121UUA1emScr+2uOc6kNJFCeOPbgY94YbaxmSuw1LA0RUXlIGxF8HVyQTq8uQnDPm9T7+r+dcZs1Ce2vect5X3Ndydg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2Ls+eJhv3OetkM0HqX5Z+7fsiegalmCSzTCCsWqYbeA2HQ1EnwtRLy7cFJcwz4ECgWx6A947EjZkZv5inZCgpP90efsOtzkDFPldK3U4Xzgn8GQPE368prmGJHtqY9Upesfuj7ziuvVeO3ODGU1dEOYRG+AURFGsbdbbpR/ko70=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="325c87b66681c6d11908349114b263e9be1b4868f10a9eb91a6f884fb3e627c3" Description="" Url=""><as:assemblyIdentity name="Arquimedes.exe" version="1.0.0.0" publicKeyToken="39191f0e21806e03" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ERICK\PC</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Weycfi2NsZvXxhhgkmDxSH9gU06CKUiYT3wi+WJrsV4=</DigestValue></Reference></SignedInfo><SignatureValue>waodYhvQAuJCRYOhG7qmNLMVGNurto3cR4l1Z/zHheyAGsZ4S57NRsCQGrlCXNT89hCNH9NMNLkSAIGXAkYxDN7KXHSpEdkN75UAoOpr6AYG8yQoSd20k64keoommfrxdxLkDEoKpwGnY6umxVKOKYoHtSbD9hGX2qjwjGWuVrA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2Ls+eJhv3OetkM0HqX5Z+7fsiegalmCSzTCCsWqYbeA2HQ1EnwtRLy7cFJcwz4ECgWx6A947EjZkZv5inZCgpP90efsOtzkDFPldK3U4Xzgn8GQPE368prmGJHtqY9Upesfuj7ziuvVeO3ODGU1dEOYRG+AURFGsbdbbpR/ko70=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQJ62Mr+XuS4BKLh/dWcMWyTANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAARQBSAEkAQwBLAFwAUABDMB4XDTI2MDgyMzEzMzQxMFoXDTI3MDgyMzE5MzQxMFowGzEZMBcGA1UEAx4QAEUAUgBJAEMASwBcAFAAQzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2Ls+eJhv3OetkM0HqX5Z+7fsiegalmCSzTCCsWqYbeA2HQ1EnwtRLy7cFJcwz4ECgWx6A947EjZkZv5inZCgpP90efsOtzkDFPldK3U4Xzgn8GQPE368prmGJHtqY9Upesfuj7ziuvVeO3ODGU1dEOYRG+AURFGsbdbbpR/ko70CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCer8M3eud7F4+NN08mN23S/eDDzhSJHxFvqIfJ8dr6VK4dFL9Iv5HrGut6dYTTYRtqWdaIbX1/6hWMkLaFJriGQbymsbRZdMqURmDR80qRC49Mk1PRpdVrX/y5IU9CcMnU3wvsMUUbMhSyKA6d0Y5Et/KzKJgjpEHJyG28nS/VvQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
