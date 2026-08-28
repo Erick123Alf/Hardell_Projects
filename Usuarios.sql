@@ -1,0 +1,6 @@
+﻿CREATE TABLE Administradores (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Usuario VARCHAR(50) NOT NULL UNIQUE,
+    PasswordHash VARCHAR(256) NOT NULL,
+    FechaCreacion DATETIME NOT NULL DEFAULT GETDATE()
+);
